@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Corsiva - Responsive Hotel Website Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- LOAD CSS FILES -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	 <link href="css/bootstrap-reponsive.css" rel="stylesheet" type="text/css">
+	  <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+	   <link href="font-awesome/font-awesome.css" rel="stylesheet" type="text/css">
+	    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+		 <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+		  <link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
+		   <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css">
+		   	<link href="css/responsiveslides.css" rel="stylesheet" type="text/css">
+			 <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- header begin -->
+    <header>
+        <!-- logo begin -->
+        <div id="logo">
+            <div class="inner">
+                <a href="index.html">
+                    <img src="img/logo.png" alt=""></a>
+            </div>
+        </div>
+        <!-- logo close -->
+
+        <!-- mainmenu begin -->
+        <div id="mainmenu-container">
+            <ul id="mainmenu">
+             <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="explore.html">Thông Tin</a></li>
+                <li><a href="room.html">Phòng</a>
+				<ul>
+					<li><a href="deluxe.html">Deluxe Room</a></li>
+					<li><a href="luxury-gold.html">Luxury Gold</a></li>
+					<li><a href="premier-gold.html">Premier Gold</a></li>
+					<li><a href="luxury-diamond.html">Luxury Diamond</a></li>
+					<li><a href="premier-diamond.html">Premier Diamond</a></li>
+					<li><a href="apartment.html">Apartment</a></li>
+				</ul>
+				</li>
+				<li><a href="news.html">Tin Tức</a>
+                    <ul>
+                        <li><a href="news.html">Ngắn Hoa</a></li>
+                        <li><a href="news2.html">Ăn Uống</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="booking.html">Đặt Phòng</a></li>
+                <li><a href="gallery.html">Hình Ảnh</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <!-- mainmenu close -->
+
+        <div id="menu-btn"></div>
+    </header>
+    <!-- header close -->
+
+    <!-- subheader begin -->
+    <div id="subheader">
+        <h1>Đặt Chổ</h1>
+    </div>
+    <!-- subheader close -->
+
+    <!-- content begin -->
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="contact_form_holder">
+                        <form name="contactForm" id='booking_form' method="post" action='reservation.php'>
+
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Họ Tên" />
+                            </div>
+
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="email" id="email" placeholder="Email *" />
+                                <div id="error_email" class="error">Please check your email</div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <select name="guest" id="guest" class="form-control">
+                                    <option>Số lượng khách</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>>5</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="checkin" id="checkin" placeholder="Ngày Đến" />
+                                <div id="error_datepicker" class="error">Please check again</div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" name="checkout" id="checkout" placeholder="Ngày Về" />
+                                <div id="error_person_num" class="error">Please check again</div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <select name="room" id="room" class="form-control">
+                                    <option>Duluxe Room</option>
+                                    <option>Luxury Gold</option>
+                                    <option>Premier Gold</option>
+                                    <option>Luxury Diamond</option>
+                                    <option>Premier Diamond</option>
+                                </select>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <textarea cols="10" rows="8" name="message" id="message" class="form-control" placeholder="Ghi chú thêm"></textarea>
+                                <div id="error_message" class="error">Please check your message</div>
+                                <div id="mail_success" class="success">Thank you. Your message has been sent.</div>
+                                <div id="mail_failed" class="error">Error, email not sent</div>
+
+                                <div id="mail_success" class="success">Thank you. Your message has been sent.</div>
+                                <div id="mail_failed" class="error">Error, email not sent</div>
+
+                                <p id="btnsubmit">
+                                    <input type="submit" id="send" value="Gửi" class="btn btn-custom" />
+                                </p>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+
+                <div id="sidebar" class="col-md-4">
+                    <!-- widget -->
+                    <div class="widget widget-text">
+                        <h3>Địa Chỉ</h3>
+                        <div class="map-small">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.159715057121!2d106.70443655004618!3d10.799076761691182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f315d625c89%3A0x73084dd08a9fe5a4!2sUniversity+of+Finance+and+Economics+HCMC!5e0!3m2!1sen!2sus!4v1545637445552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                        <address>
+                            <h4>Grand Arabia Hotel</h4>
+                            <span>276 Điện Biên Phủ, Q.Bình Thạnh, TP.HCM, Phường 17 Bình Thạnh Hồ Chí Minh, Vietnam</span>
+                            <span><strong>Phone:</strong>(093)555 8508</span>
+                            <span><strong>Fax:</strong>(038) 333 8892</span>
+                            <span><strong>Email:</strong><a href="mailto:contact@example.com">contact@uef.edu.vn</a></span>
+                            <span><strong>Web:</strong><a href="https://www.garena.vn/
+">https://www.garena.vn/</a></span>
+                        </address>
+
+
+                    </div>
+                    <!-- widget close -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+	<!-- content close -->
+
+    <!-- footer begin -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Về Chùng Tôi</h3>
+Mỗi phòng được thiết kế từ màu sắc đến nội thất đều sang trọng, ấm cúng, đầy đủ tiện nghi các phòng ở đều có cửa sổ hoặc ban công có view nhìn ra đồi thông, vườn hoa và toàn cảnh thành phố. Ngoài ra, Grand Arabia còn có quầy bar với khu sân vườn thoáng đẹp phục vụ điểm tâm sáng, những buổi tiệc vui của quý khách cùng gia đình và bạn bè, hay chỉ đơn thuần là nơi quý khách ngồi thư giãn nhâm nhi ly cà phê, ly trà nóng trong những giai điệu nhạc du dương... Chưa hết đâu, khách sạn còn có phòng tập gym để quý khách kết hợp tập nâng cao sức khỏe và giữ dáng trong chuyến đi du lịch của mình. Wow! Quả thật là một điều tuyệt vời phải không nào? Còn chần chừ gì nữa, hãy nhấc điện thoại đặt phòng cho chúng tôi ngay nhé
+                </div>
+                <div class="col-md-4">
+                    <h3>Tin Tức</h3>
+                    <ul class="bloglist-small">
+                        <li>
+                            <div class="date-box">
+                                <span class="day">05</span>
+                                <span class="month">Tháng 5</span>
+                            </div>
+                            <div class="txt">
+                                <h5><a href="css/#">” Lạc lối” giữa sắc vàng hoa dã quỳ khi du lịch Đà Lạt tháng 11</a></h5>
+                                <div>
+                                    <div>Dã quỳ là loài hoa dại, phổ biến ở Tây Nguyên và nhiều tỉnh vùng cao phía Bắc... </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date-box">
+                                <span class="day">29</span>
+                                <span class="month">Tháng 4</span>
+                            </div>
+                            <div class="txt">
+                                <h5><a href="css/#">Địa Điểm Ăn Uống</a></h5>
+                                Danh sách các quán ăn ngon ở Đà Lạt nhất định phải ăn thử 
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Tọa Lạc Tại</h3>
+                    <address>
+                        <span>276 Điện Biên Phủ, Q.Bình Thạnh, TP.HCM, Phường 17 Bình Thạnh Hồ Chí Minh</span>
+                        <span><strong>Phone:</strong>(200) 333 1234</span>
+                        <span><strong>Fax:</strong>(911) 333 1234</span>
+                        <span><strong>Email:</strong><a href="mailto:contact@grandhotel.com">contact@grandhotel.com</a></span>
+                        <span><strong>Web:</strong><a href="#test">http://garena.com</a></span>
+                    </address>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/annalove.daesung">
+                            <img src="img/social-icons/facebook.png" alt=""></a>
+                        <a href="https://youtu.be/9flXyzcSfT4?t=45">
+                            <img src="img/social-icons/youtube.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer close -->
+
+    <!-- LOAD JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/jquery.ui.totop.js"></script>
+    <script src="js/selectnav.js"></script>
+    <script src="js/ender.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- datepicker js -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('#checkin').datepicker();
+            jQuery('#checkout').datepicker();
+        });
+    </script>
+
+</body>
+</html>
