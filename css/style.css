@@ -163,10 +163,10 @@ header #logo .inner {
     position:relative
 }
 
-#mainmenu li i:after {
+#mainmenu li a:after {
     font-family:"FontAwesome";
     float:right;
-    content:"\f111";
+    content:"fas fa-circle";
     font-size:8px;
     margin-left:40px;
     color:#edb83a
