@@ -687,7 +687,7 @@ footer a:hover {
     padding:0!important
 }
 
-.client-quotes li: {
+.client-quotes li:before {
     font-family:"FontAwesome";
     content:"\f10d";
     font-size:32px;
