@@ -163,7 +163,7 @@ header #logo .inner {
     position:relative
 }
 
-#mainmenu li:after {
+#mainmenu li i:after {
     font-family:"FontAwesome";
     float:right;
     content:"\f111";
