@@ -1216,9 +1216,9 @@
 .fa-adn:before {
   content: "\f170";
 }
-.fa-bitbucket:before {
-  content: "\f171";
-}
+/* .fa-bitbucket:before { */
+  /* content: "\f171"; */
+/* } */
 .fa-bitbucket-square:before {
   content: "\f172";
 }
