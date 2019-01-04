@@ -37,6 +37,7 @@ misc
 /*- - - - - - - - - - - - - - - - - - - - 
 	BODY
 - - - - - - - - - - - - - - - - - - - - */
+
 body {
     font-family:"Open Sans",Arial,Helvetica,sans-serif;
     font-size:13px;
@@ -166,7 +167,7 @@ header #logo .inner {
 #mainmenu li a:after {
     font-family:"FontAwesome";
     float:right;
-    <i class="fas fa-circle"></i>;
+    content:"\f111";
     font-size:8px;
     margin-left:40px;
     color:#edb83a
