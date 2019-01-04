@@ -166,7 +166,7 @@ header #logo .inner {
 #mainmenu li a:after {
     font-family:"FontAwesome";
     float:right;
-    content:"fas fa-circle";
+    <i class="fas fa-circle"></i>
     font-size:8px;
     margin-left:40px;
     color:#edb83a
