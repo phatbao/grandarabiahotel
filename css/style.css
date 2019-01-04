@@ -688,7 +688,7 @@ footer a:hover {
 }
 
 .client-quotes li:before {
-    url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+    @import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
     content:"\f10d";
     font-size:32px;
     color:#edb83a;
