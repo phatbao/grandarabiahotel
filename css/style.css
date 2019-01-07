@@ -275,7 +275,7 @@ header #logo .inner {
 }
 
 #menu-btn:before {
-    font-family:FontAwesome;
+    font-family:"FontAwesome";
     content:"\f0c9";
     font-size:27px;
     color:#fff
