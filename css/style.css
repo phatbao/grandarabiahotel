@@ -165,11 +165,9 @@ header #logo .inner {
 
 #mainmenu li a:after {
     font-family:"FontAwesome";
-    float:right;
+    
     content:"\f111";
-    font-size:8px;
-    margin-left:40px;
-    color:#edb83a
+    
 }
 
 #mainmenu li:last-child a:after {
