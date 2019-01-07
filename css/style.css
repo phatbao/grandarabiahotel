@@ -664,7 +664,7 @@ footer a:hover {
     margin-bottom:20px;
     padding-left:60px;
     font-style:italic
-} 
+}
 
 .client-quotes i {
     margin:20px 0;
@@ -688,7 +688,7 @@ footer a:hover {
 }
 
 .client-quotes li:before {
-    @import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+    font-family:"FontAwesome";
     content:"\f10d";
     font-size:32px;
     color:#edb83a;
