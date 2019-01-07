@@ -164,7 +164,7 @@ header #logo .inner {
 }
 
 #mainmenu li a:after {
-    font-family:"FontAwesome";
+    font-family: FontAwesome;
     content:"\f111";
     float: right;
 	font-size:8px;
